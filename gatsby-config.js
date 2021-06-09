@@ -21,7 +21,8 @@ module.exports = {
         delayLoad: true,
         delayLoadTime: 500,
       },
-    }`gatsby-plugin-image`,
+    },
+    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
