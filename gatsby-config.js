@@ -12,7 +12,16 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-segment-js`,
+      options: {
+        prodKey: process.env.SEGMENT_API_KEY,
+        devKey: process.env.SEGMENT_API_KEY,
+        trackPage: false,
+        delayLoad: true,
+        delayLoadTime: 500,
+      },
+    }`gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
